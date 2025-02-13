@@ -1,0 +1,209 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #DDE6ED;
+    overflow: hidden;
+}
+
+.main-wrapper {
+	margin: 30px auto 0;
+	width: 1080px;
+	text-align: center;
+}
+
+.main-title {
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 3.2em;
+	color: #526D82;
+    margin: 100px 0 50px -250px;
+}
+
+.drum-kit-wrapper {
+	position: relative;
+	width: 600px;
+	margin: -50px 0 0 100px;
+}
+
+.drum-kit {
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+.crash-cymbal {
+	position: absolute;
+	top: 114px;
+    left: 80px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+
+.hihat-top-cymbal {
+	position: absolute;
+    top: 166px;
+    right: 71px;
+    transform: scale(1.35);
+    z-index: 0;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+	display: inline-block;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #9DB2BF;
+    font-size: 1.5em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 20px;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 2;
+}
+
+.key.kick {
+	top: 355px;
+    right: 250px;
+}
+
+.key.kick2 {
+    top: 355px;
+    right: 308px;
+}
+
+.key.snare {
+	right: 145px;
+    top: 280px;
+}
+
+.key.tom-high {
+	right: 227px;
+    top: 240px;
+}
+
+.key.tom-mid {
+	left: 222px;
+    top: 220px;
+}
+
+.key.tom-low {
+	top: 320px;
+    left: 133px;
+}
+
+.key.crash {
+	top: 80px;
+    left: 75px;
+}
+
+.key.ride {
+	left: 165px;
+    top: 87px;
+}
+
+.key.hihat-open {
+	right: 165px;
+    top: 144px;
+}
+
+.key.hihat-close {
+	right: 60px;
+    top: 150px;
+}
+
+.playing {
+	transform: scale(1.12);
+}
+
+.key-map-wrapper {
+	position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #27374D;
+    width: 250px;
+    z-index: 3;
+}
+
+.key-map-wrapper > h2 {
+	color: #DDE6ED;
+	font-family: 'Century Gothic';
+	margin-bottom: 35px;
+	border-bottom: 1px solid #DDE6ED;
+    padding-bottom: 20px;
+}
+
+.key-map-list {
+	list-style: none;
+	color: #DDE6ED;
+	text-align: left;
+}
+
+.key-map-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #9DB2BF;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.key-sound {
+	font-size: 1.2em;
+	margin-left: 10px;
+	font-family: 'Century Gothic', cursive;
+	vertical-align: middle;
+}
+.dot {
+  height: 500px;
+  width: 500px;
+  background-color: #526d82d7;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -250px;
+  left:-250px;
+  z-index: 5;
+}
+.dot2 {
+    height: 200px;
+    width: 200px;
+    background-color: #9db2bfe7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left:10px;
+    z-index: 6;
+    box-shadow: 0 0 2px 2px #6565653e;
+  }
+  .dot3 {
+    height: 300px;
+    width: 300px;
+    background-color: #9db2bffb;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    right:200px;
+    z-index: 5;
+    box-shadow: 0 0 2px 2px #4d4d4d6b;
+  }
+  .dot4 {
+    height: 150px;
+    width: 150px;
+    background-color: #27374D;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right:400px;
+    z-index: 6;
+    box-shadow: 0 0 2px 2px #4d4d4d6b;
+  }
